@@ -1,0 +1,12 @@
+sudo: false
+dist: trusty
+language: rust
+cache: cargo
+rust:
+  - nightly
+branches:
+  only:
+  - master 
+script:
+  - cargo test
+  - cargo run
